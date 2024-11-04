@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página de Ejemplo</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Archivo de estilos CSS -->
+    <script src="script.js" defer></script> <!-- Archivo JavaScript -->
+</head>
+<body>
+    <header>
+        <h1>Mi Página de Ejemplo</h1>
+        <nav>
+            <ul>
+                <li><a href="#inicio" class="menu-item">Inicio</a></li>
+                <li><a href="#marco_teorico" class="menu-item">Marco Teórico</a></li> <!-- Asegúrate de que sea "marco_teorico" -->
+                <li><a href="#analisis" class="menu-item">Análisis</a></li>
+                <li><a href="#estructurado" class="menu-item">Estructurado</a></li>
+                <li><a href="#orientado_a_objetos" class="menu-item">Orientado a Objetos</a></li>
+                <li><a href="#video" class="menu-item">Video</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="inicio" class="hidden">
+            <h2>Inicio</h2>
+            <p>Bienvenido a nuestra página de ejemplo donde exploramos conceptos clave en la programación.</p>
+        </section>
+
+        <section id="marco_teorico" class="hidden"> <!-- Debe coincidir con el href -->
+            <h2>Marco Teórico</h2>
+            <p>En esta sección se explican los fundamentos teóricos que sustentan el tema en cuestión.</p>
+        </section>
+
+        <section id="analisis" class="hidden">
+            <h2>Análisis</h2>
+            <p>Se realizará un análisis profundo sobre el impacto de las metodologías de programación.</p>
+        </section>
+
+        <section id="estructurado" class="hidden">
+            <h2>Estructurado</h2>
+            <p>La programación estructurada es un paradigma que utiliza estructuras de control para facilitar la comprensión del código.</p>
+        </section>
+
+        <section id="orientado_a_objetos" class="hidden"> <!-- Debe coincidir con el href -->
+            <h2>Orientado a Objetos</h2>
+            <p>La programación orientada a objetos permite organizar el código en objetos que representan entidades del mundo real.</p>
+        </section>
+
+        <section id="video" class="hidden">
+            <h2>Video</h2>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/tu_id_de_video_aqui" title="Video Ejemplo" frameborder="0" allowfullscreen></iframe>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2024 Mi Página de Ejemplo</p>
+    </footer>
+
+    <style>
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    background: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center; /* Centrar el contenido del encabezado */
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex; /* Usar Flexbox para centrar el menú */
+    justify-content: center; /* Centrar el menú horizontalmente */
+}
+
+header nav ul li {
+    margin: 0 15px; /* Espacio entre los elementos del menú */
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 5px 10px; /* Espaciado interno para los enlaces */
+}
+
+header nav ul li a:hover {
+    background-color: #555; /* Cambia el fondo al pasar el mouse */
+    border-radius: 5px; /* Bordes redondeados para los enlaces */
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+.hidden {
+    display: none; /* Ocultar secciones por defecto */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+    </style>
+</body>
+</html>
